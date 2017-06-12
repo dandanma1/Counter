@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="cannot">不能除以0</string>
+</resources>

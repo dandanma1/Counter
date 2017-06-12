@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.counter.MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/edit_text_first"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="end|bottom"
+            android:textSize="27sp"
+            />
+        <EditText
+            android:id="@+id/edit_text_second"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="end|bottom"
+            android:textSize="27sp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:gravity="end|bottom"
+            android:textSize="27sp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:columnCount="4"
+        app:rowCount="5">
+
+
+        <Button
+            android:id="@+id/clean"
+            style="@style/BtnStyle"
+            android:onClick="clean"
+            android:text="C"
+            android:textColor="#FFAA00"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:id="@+id/reduction"
+            style="@style/BtnStyle"
+            android:onClick="reduction"
+            android:text="R"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/BtnStyle"
+            android:onClick="divide"
+            android:text="÷"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/BtnStyle"
+            android:onClick="multiply"
+            android:text="x"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/BtnStyle"
+            android:onClick="seven"
+            android:text="7"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/BtnStyle"
+            android:onClick="eight"
+            android:text="8"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/BtnStyle"
+            android:onClick="nine"
+            android:text="9"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/BtnStyle"
+            android:onClick="minus"
+            android:text="-"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/four"
+            style="@style/BtnStyle"
+            android:onClick="four"
+            android:text="4"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/five"
+            style="@style/BtnStyle"
+            android:onClick="five"
+            android:text="5"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/six"
+            style="@style/BtnStyle"
+            android:onClick="six"
+            android:text="6"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/BtnStyle"
+            android:onClick="plus"
+            android:text="+"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/one"
+            style="@style/BtnStyle"
+            android:onClick="one"
+            android:text="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/two"
+            style="@style/BtnStyle"
+            android:onClick="two"
+            android:text="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/three"
+            style="@style/BtnStyle"
+            android:onClick="three"
+            android:text="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/equal"
+            android:alignmentMode="alignBounds"
+            android:background="#FFAA00"
+            android:onClick="equal"
+            android:text="="
+            android:textColor="#FFFFFF"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowSpan="2"
+            app:layout_rowWeight="2"
+
+
+            />
+
+        <Button
+            android:id="@+id/percent"
+            style="@style/BtnStyle"
+            android:onClick="percent"
+            android:text="%"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/BtnStyle"
+            android:onClick="zero"
+            android:text="0"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/point"
+            style="@style/BtnStyle"
+            android:onClick="point"
+            android:text="."
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+    </android.support.v7.widget.GridLayout>
+
+</LinearLayout>
